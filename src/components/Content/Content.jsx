@@ -2,7 +2,9 @@ import './Content.css';
 const Content = () => {
     return(
         <div className={"content"}>
-            <div className="area areaA">A</div>
+            <div className="area areaA">
+                <img src={"/profile.jpg"} alt={'profile photo'}/>
+            </div>
             <div className="area areaB">B</div>
             <div className="area areaC">C</div>
             <div className="area areaD">D</div>

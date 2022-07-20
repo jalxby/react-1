@@ -1,11 +1,84 @@
 .content {
     display: grid;
-    grid-gap: 2px;
+    grid-gap: 25px;
     width: 72%;
     padding-left: 14%;
     grid-template-columns: 260px auto 260px;
+    grid-template-areas:
+            "A E E"
+            "B F H"
+            "B G H"
+            "B G I"
+            "C G I"
+            "C G J"
+            "D G J";
 }
 
 .area {
+    align-content: center;
     background-color: cadetblue;
 }
+
+.areaA {
+    align-content: center;
+    grid-area: A;
+    background-color: coral;
+    transform: translateY(calc(-50% - 10px));
+    height: 225px;
+    width: 225px;
+    padding: 15px;
+    border-color: #262626;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.areaA img{
+    width: inherit;
+    height: inherit;
+}
+
+.areaB {
+    grid-area: B;
+    background-color: coral;
+}
+
+.areaC {
+    grid-area: C;
+    background-color: coral;
+}
+
+.areaD {
+    grid-area: D;
+    background-color: coral;
+}
+
+.areaE {
+    grid-area: E;
+    background-color: coral;
+}
+
+.areaF {
+    grid-area: F;
+    background-color: coral;
+}
+
+.areaG {
+    grid-area: G;
+    background-color: coral;
+}
+
+.areaH {
+    grid-area: H;
+    background-color: coral;
+}
+
+.areaI {
+    grid-area: I;
+    background-color: coral;
+}
+
+.areaJ {
+    grid-area: J;
+    background-color: coral;
+}
+
